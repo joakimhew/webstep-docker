@@ -6,6 +6,24 @@ I mappen `exercise` finns det mappar för dotnet, java, nodejs och go. Välj det
 
 Varje mapp har en `Dockerfile` och en `docker-compose.yml` som du behöver fylla i. Skulle du fastna så finns svaren i `solution` mappen.
 
+Testa att bygga din image och starta en container genom att köra:
+`docker-compose up --build`
+
+När du lyckats bygga imagen är det dags att ladda upp den till docker hub. Detta gör du genom att :
+
+1. Gå till https://hub.docker.com/
+2. Tryck på `Create repository` och skapa en ny repository
+3. `docker login`
+4. `docker tag local-image:tagname new-repo:tagname`
+5. `docker push new-repo:tagname`
+
+Nu kan vi testa att köra den nya imagen i en ny miljö:
+
+1. Gå till https://labs.play-with-docker.com/
+2. Skapa en ny instans (Add new instance)
+3. Hämta imagen som du precis pushade: `docker pull new-repo:tagname`
+4. Starta imagen genom att köra `docker run ...`
+
 ## Tips
 
 ### Dockerfile
