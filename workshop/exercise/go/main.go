@@ -8,9 +8,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	// fmt.Fprintf(w, time.Now().Format("15:04:05"))
-	fmt.Fprintf(w, "Hello, from Webstep presentation Go server! 🎉")
-	//fmt.Fprintf(w, "The time is currently: %v", time.Now().Format("15:04:05"))
+	fmt.Fprintf(w, "Hello, Webstep!")
 }
 
 func main() {
