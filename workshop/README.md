@@ -2,11 +2,11 @@
 
 ## Instruktioner
 
-I mappen `exercise` finns det mappar för dotnet, java, nodejs och go. Välj det som du är bekväm med, eller något du inte är bekväm med för lite extra utmaning ;)
+I mappen `exercise` finns det mappar för dotnet, java, nodejs, go och react. Välj det som du är bekväm med, eller något du inte är bekväm med för lite extra utmaning ;)
 
 Varje mapp har en `Dockerfile` och en `docker-compose.yml` som du behöver fylla i. Skulle du fastna så finns svaren i `solution` mappen.
 
-Testa att bygga din image och starta en container genom att köra:
+När du känner dig färdig med din `Dockerfile` och `docker-compose.yml` så kan du testa att bygga din image och starta en container genom att köra:
 `docker-compose up --build`
 
 När du lyckats bygga imagen är det dags att ladda upp den till docker hub. Detta gör du genom att :
